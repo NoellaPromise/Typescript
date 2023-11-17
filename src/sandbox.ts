@@ -1,36 +1,23 @@
-let character: string = 'mario';
-let age: number;
-let isLoggedIn: boolean;
+// let greet: Function = () => {
+//   console.log('hello, world');
+// }
 
-// age = 'luigi';
-age = 30;
+// greet = 'hello';
 
-// isLoggedIn = 25;
-isLoggedIn = true;
+// greet = () => {
+//   console.log('hello, again');
+// }
 
-// arrays
-let ninjas: string[] = [];
+const add = (a: number, b: number, c/*?*/: number | string = 10): void => {
+  console.log(a + b);
+  console.log(c);
+}
 
-ninjas.push('ryu');
-ninjas.push('chun-li');
-console.log(ninjas);
+add(5, 10, 'ninja');
 
-// union types
-let mixed: (string|number|boolean)[] = [];
-mixed.push('hello');
-mixed.push(false);
-mixed.push(20);
-console.log(mixed);
+const minus = (a: number, b: number): number => {
+  return a + b;
+}
 
-let uid: string|number;
-
-// objects
-let ninjaOne: object;
-ninjaOne = { name: 'yoshi', age: 30 };
-
-let ninjaTwo: {
-  name: string,
-  age: number,
-  beltColour: string
-};
-ninjaTwo = { name: 'ken', age: 20, beltColour: 'black' };
+let result = minus(10,7);
+console.log(result);
